@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <!-- FIX: viewport-fit=cover für Notch/Dynamic Island iPhones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Impressum – Wehlflix</title>
+  <meta name="description" content="Impressum von Michael Wehle – Angaben gemäß § 5 DDG und § 18 MStV." />
+  <meta name="robots" content="index, follow" />
+  <!-- FIX: theme-color für Safari Statusleiste (Light + Dark) -->
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
+  <!-- Apple Web App Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <!-- FIX: Tailwind config VOR dem CDN-Script -->
+  <script>
+    tailwind = { config: {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }}
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FIX: safe-area-inset Padding für Home-Indicator & Notch -->
+  <style>
+    body {
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+    /* Mindest-Touch-Target 44x44pt nach Apple HIG */
+    a, button { min-height: 44px; }
+    /* Smooth Scroll für Anker-Links */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-10 bg-white/90 dark:bg-gray-950/90 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        Zurück
+      </a>
+      <div class="flex gap-4 text-sm">
+        <a href="impressum.html" class="font-semibold text-gray-900 dark:text-white">Impressum</a>
+        <a href="datenschutz.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">Datenschutz</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="max-w-2xl mx-auto px-4 py-10">
+
+    <h1 class="text-2xl font-bold mb-1">Impressum</h1>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Angaben gemäß § 5 DDG und § 18 Abs. 2 MStV</p>
+
+    <section class="space-y-8">
+
+      <!-- Anbieter -->
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Anbieter</h2>
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 space-y-1 text-sm leading-relaxed">
+          <p class="font-medium text-base">Michael Wehle</p>
+          <p>Kuntzestraße 48</p>
+          <p>73079 Süßen</p>
+          <p>Deutschland</p>
+        </div>
+      </div>
+
+      <!-- Kontakt -->
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Kontakt</h2>
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 space-y-2 text-sm">
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a href="mailto:MichaelWehle@proton.me" class="text-blue-600 dark:text-blue-400 hover:underline break-all">MichaelWehle@proton.me</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <a href="tel:+4917672306810" class="text-blue-600 dark:text-blue-400 hover:underline">+49 176 72306810</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hinweis Steuer -->
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Steuerliche Angaben</h2>
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 text-sm text-gray-600 dark:text-gray-400">
+          <p>Keine Umsatzsteuer-Identifikationsnummer vorhanden (Kleinunternehmer / Privatperson).</p>
+        </div>
+      </div>
+
+      <!-- Verantwortlich nach § 18 MStV -->
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 space-y-1 text-sm">
+          <p class="font-medium">Michael Wehle</p>
+          <p class="text-gray-600 dark:text-gray-400">Kuntzestraße 48, 73079 Süßen</p>
+        </div>
+      </div>
+
+      <!-- Haftungsausschluss -->
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Haftungsausschluss</h2>
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 text-sm text-gray-600 dark:text-gray-400 space-y-3 leading-relaxed">
+          <p><strong class="text-gray-800 dark:text-gray-200">Haftung für Inhalte:</strong> Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+          <p><strong class="text-gray-800 dark:text-gray-200">Haftung für Links:</strong> Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte keine Gewähr übernehmen.</p>
+          <p><strong class="text-gray-800 dark:text-gray-200">Urheberrecht:</strong> Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="max-w-2xl mx-auto px-4 py-6 border-t border-gray-100 dark:border-gray-800 text-center text-xs text-gray-400 dark:text-gray-600">
+    © 2026 Michael Wehle · <a href="impressum.html" class="hover:underline">Impressum</a> · <a href="datenschutz.html" class="hover:underline">Datenschutz</a>
+  </footer>
+
+</body>
+</html>
