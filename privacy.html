@@ -162,6 +162,10 @@
                 <td class="px-4 py-3 text-gray-700 dark:text-gray-300 font-medium">Push Notifications</td>
                 <td class="px-4 py-3 text-gray-500 dark:text-gray-400">Sending event reminders for upcoming appointments. Consent granted via iOS system prompt. Legal basis: Art. 6(1)(a) GDPR.</td>
               </tr>
+              <tr class="bg-white dark:bg-gray-950">
+                <td class="px-4 py-3 text-gray-700 dark:text-gray-300 font-medium">App Tracking Transparency (ATT)</td>
+                <td class="px-4 py-3 text-gray-500 dark:text-gray-400">Before using your Advertising Identifier (IDFA) for personalized ads, the app displays an iOS system prompt (App Tracking Transparency framework, ATT). Tracking only occurs after your explicit opt-in. You can change this at any time under <em>Settings → Privacy &amp; Security → Tracking</em>. Legal basis: Art. 6(1)(a) GDPR.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -219,15 +223,28 @@
             </div>
           </div>
 
-          <p class="text-gray-600 dark:text-gray-400 text-xs">Google Ireland Limited may transfer data to Google LLC servers in the USA. Google LLC is certified under the EU-U.S. Data Privacy Framework (DPF), ensuring an adequate level of data protection. Legal basis for third-country transfer: Art. 46(2)(c) GDPR (Standard Contractual Clauses).</p>
+          <div class="bg-white dark:bg-gray-950 rounded-lg p-4 mt-3 text-sm">
+            <p class="font-semibold text-gray-700 dark:text-gray-300 mb-2">Data categories collected by AdMob:</p>
+            <ul class="space-y-1 text-gray-600 dark:text-gray-400 text-xs list-disc list-inside">
+              <li>Advertising Identifier (IDFA) – only with ATT consent</li>
+              <li>IP address (used to derive coarse location)</li>
+              <li>Device information (OS version, device model, language)</li>
+              <li>Ad interaction data (impressions, clicks, view duration)</li>
+              <li>App usage data (session length, in-app events)</li>
+            </ul>
+          </div>
+          <p class="text-gray-600 dark:text-gray-400 text-xs mt-3">Google Ireland Limited may transfer data to Google LLC servers in the USA. Google LLC is certified under the EU-U.S. Data Privacy Framework (DPF), ensuring an adequate level of data protection. Legal basis for third-country transfer: Art. 46(2)(c) GDPR (Standard Contractual Clauses).</p>
           <p class="text-gray-600 dark:text-gray-400 text-xs mt-1">More information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Google Privacy Policy (policies.google.com)</a></p>
+          <p class="text-gray-600 dark:text-gray-400 text-xs mt-2"><strong class="text-gray-700 dark:text-gray-300">Withdraw consent:</strong> You can withdraw or change your advertising consent at any time via <em>Settings → Privacy</em> within the app (if a CMP settings option is available) or via <em>iOS Settings → Privacy &amp; Security → Tracking</em>.</p>
         </div>
+        <p class="text-gray-500 dark:text-gray-400 text-xs mt-4 border-t border-gray-200 dark:border-gray-800 pt-4">Neither the app nor any integrated SDK collects sensitive categories of personal data such as health data, precise location, financial information, political opinions, religious beliefs, or biometric data.</p>
       </div>
 
       <!-- 7 -->
       <div id="retention">
         <h2 class="text-base font-semibold mb-3">7. Data Retention</h2>
         <p class="text-gray-600 dark:text-gray-400">All data stored locally on your device (events, settings) is retained until you uninstall the app or manually delete the data within the app. No data is stored on external servers by me.</p>
+        <p class="text-gray-600 dark:text-gray-400 mt-2">Data processed by Google AdMob (e.g. IDFA-based advertising data) is retained by Google Ireland Limited according to their own retention policy. For details, see <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Google's data retention information</a>.</p>
       </div>
 
       <!-- 8 -->
@@ -253,6 +270,10 @@
           <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4 flex gap-3">
             <span class="text-lg leading-none mt-0.5">✏️</span>
             <div><p class="font-medium text-gray-800 dark:text-gray-200">Right to Rectification (Art. 16 GDPR)</p><p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">You can request correction of inaccurate data.</p></div>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4 flex gap-3">
+            <span class="text-lg leading-none mt-0.5">🗑️</span>
+            <div><p class="font-medium text-gray-800 dark:text-gray-200">Right to Erasure (Art. 17 GDPR – "Right to be Forgotten")</p><p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">You can request the deletion of your personal data, provided no legal retention obligations apply.</p></div>
           </div>
           <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4 flex gap-3">
             <span class="text-lg leading-none mt-0.5">⏸️</span>
@@ -290,8 +311,13 @@
       <div id="ccpa">
         <h2 class="text-base font-semibold mb-3">10. California Privacy Rights (CCPA)</h2>
         <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 text-gray-600 dark:text-gray-400 space-y-2">
-          <p>If you are a California resident, the California Consumer Privacy Act (CCPA) grants you specific rights, including the right to know what personal data is collected, the right to deletion, and the right to opt out of the sale of personal data.</p>
-          <p><strong class="text-gray-800 dark:text-gray-200">MMCompanion does not sell personal data.</strong> To exercise any CCPA rights, please contact: <a href="mailto:MichaelWehle@proton.me" class="text-blue-600 dark:text-blue-400 hover:underline">MichaelWehle@proton.me</a></p>
+          <p>If you are a California resident, the California Consumer Privacy Act (CCPA/CPRA) grants you specific rights, including the right to know what personal data is collected, the right to deletion, and the right to opt out of the sale or sharing of personal data.</p>
+          <p><strong class="text-gray-800 dark:text-gray-200">MMCompanion does not sell personal data.</strong> The use of advertising identifiers (IDFA) by Google AdMob for cross-context behavioral advertising may qualify as "sharing" under CPRA. You can opt out at any time:</p>
+          <ul class="mt-2 space-y-1 list-disc list-inside">
+            <li><em>iOS Settings → Privacy &amp; Security → Tracking</em> → disable "Allow Apps to Request to Track"</li>
+            <li><em>iOS Settings → Privacy &amp; Security → Apple Advertising</em> → disable "Personalized Ads"</li>
+          </ul>
+          <p class="mt-2">To exercise any other CCPA/CPRA rights, contact: <a href="mailto:MichaelWehle@proton.me" class="text-blue-600 dark:text-blue-400 hover:underline">MichaelWehle@proton.me</a></p>
         </div>
       </div>
 

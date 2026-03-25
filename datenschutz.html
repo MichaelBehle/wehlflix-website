@@ -162,6 +162,10 @@
                 <td class="px-4 py-3 text-gray-700 dark:text-gray-300 font-medium">Push-Benachrichtigungen</td>
                 <td class="px-4 py-3 text-gray-500 dark:text-gray-400">Senden von Event-Erinnerungen bei bevorstehenden Terminen. Einwilligung via iOS-Systemprompt. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO.</td>
               </tr>
+              <tr class="bg-white dark:bg-gray-950">
+                <td class="px-4 py-3 text-gray-700 dark:text-gray-300 font-medium">App Tracking Transparency (ATT)</td>
+                <td class="px-4 py-3 text-gray-500 dark:text-gray-400">Bevor deine Werbe-ID (IDFA) für personalisierte Werbung genutzt wird, zeigt die App einen iOS-Systemdialog (App Tracking Transparency Framework, ATT). Tracking erfolgt ausschließlich nach deiner ausdrücklichen Einwilligung. Du kannst dies jederzeit unter <em>Einstellungen → Datenschutz &amp; Sicherheit → Tracking</em> ändern. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -223,13 +227,16 @@
 
           <p class="text-gray-600 dark:text-gray-400 text-xs">Google Ireland Limited kann Daten an Server der Google LLC in den USA übertragen. Google LLC ist unter dem EU-U.S. Data Privacy Framework (DPF) zertifiziert, das einen angemessenen Datenschutz sicherstellt. Rechtsgrundlage für die Drittlandübertragung: Art. 46 Abs. 2 lit. c DSGVO (Standardvertragsklauseln).</p>
           <p class="text-gray-600 dark:text-gray-400 text-xs mt-1">Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Datenschutzerklärung von Google (policies.google.com)</a></p>
+          <p class="text-gray-600 dark:text-gray-400 text-xs mt-2"><strong class="text-gray-700 dark:text-gray-300">Einwilligung widerrufen:</strong> Du kannst deine Einwilligung in Werbung jederzeit widerrufen – entweder über <em>Einstellungen → Datenschutz</em> in der App (sofern eine CMP-Option verfügbar ist) oder über <em>Einstellungen → Datenschutz &amp; Sicherheit → Tracking</em> auf deinem iPhone.</p>
         </div>
+        <p class="text-gray-500 dark:text-gray-400 text-xs mt-4 border-t border-gray-200 dark:border-gray-800 pt-4">Weder die App noch eingebundene SDKs erheben sensible Datenkategorien wie Gesundheitsdaten, genaue Standortdaten, Finanzdaten, politische Meinungen, religiöse Überzeugungen oder biometrische Daten.</p>
       </div>
 
       <!-- 7 -->
       <div id="speicherung">
         <h2 class="text-base font-semibold mb-3">7. Speicherdauer</h2>
         <p class="text-gray-600 dark:text-gray-400">Alle lokal auf deinem Gerät gespeicherten Daten (Ereignisse, Einstellungen) werden so lange gespeichert, bis du die App deinstallierst oder die Daten innerhalb der App manuell löschst. Eine Speicherung auf externen Servern durch mich findet nicht statt.</p>
+        <p class="text-gray-600 dark:text-gray-400 mt-2">Von Google AdMob verarbeitete Daten (z. B. IDFA-basierte Werbedaten) werden von Google Ireland Limited gemäß deren eigener Aufbewahrungsrichtlinie gespeichert. Details: <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Google Datenaufbewahrung</a>.</p>
       </div>
 
       <!-- 8 -->
@@ -256,6 +263,10 @@
           <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4 flex gap-3">
             <span class="text-lg leading-none mt-0.5">✏️</span>
             <div><p class="font-medium text-gray-800 dark:text-gray-200">Berichtigung (Art. 16 DSGVO)</p><p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">Du kannst die Berichtigung unrichtiger Daten verlangen.</p></div>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4 flex gap-3">
+            <span class="text-lg leading-none mt-0.5">🗑️</span>
+            <div><p class="font-medium text-gray-800 dark:text-gray-200">Löschung (Art. 17 DSGVO – „Recht auf Vergessenwerden")</p><p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">Du kannst die Löschung deiner personenbezogenen Daten verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p></div>
           </div>
           <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-4 flex gap-3">
             <span class="text-lg leading-none mt-0.5">⏸️</span>
@@ -293,8 +304,13 @@
       <div id="ccpa">
         <h2 class="text-base font-semibold mb-3">10. Hinweis für US-Nutzer (CCPA)</h2>
         <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 text-gray-600 dark:text-gray-400 space-y-2">
-          <p>Für Nutzer aus Kalifornien (USA) gilt zusätzlich der California Consumer Privacy Act (CCPA). Danach haben kalifornische Verbraucher das Recht zu erfahren, welche personenbezogenen Daten über sie gesammelt werden, das Recht auf Löschung sowie das Recht, dem Verkauf personenbezogener Daten zu widersprechen.</p>
-          <p><strong class="text-gray-800 dark:text-gray-200">MMCompanion verkauft keine personenbezogenen Daten.</strong> Alle Nutzerrechte nach CCPA können per E-Mail an <a href="mailto:MichaelWehle@proton.me" class="text-blue-600 dark:text-blue-400 hover:underline">MichaelWehle@proton.me</a> geltend gemacht werden.</p>
+          <p>Für Nutzer aus Kalifornien (USA) gilt zusätzlich der California Consumer Privacy Act (CCPA/CPRA). Danach haben kalifornische Verbraucher das Recht zu erfahren, welche personenbezogenen Daten über sie gesammelt werden, das Recht auf Löschung sowie das Recht, dem Verkauf oder der Weitergabe personenbezogener Daten zu widersprechen.</p>
+          <p><strong class="text-gray-800 dark:text-gray-200">MMCompanion verkauft keine personenbezogenen Daten.</strong> Die Nutzung der Werbe-ID (IDFA) durch Google AdMob für verhaltensbasierte Werbung kann unter dem CPRA als „Weitergabe" gelten. Du kannst dem jederzeit widersprechen:</p>
+          <ul class="mt-2 space-y-1 list-disc list-inside text-gray-600 dark:text-gray-400 text-sm">
+            <li><em>Einstellungen → Datenschutz &amp; Sicherheit → Tracking</em> → „Apps erlauben, Tracking anzufragen" deaktivieren</li>
+            <li><em>Einstellungen → Datenschutz &amp; Sicherheit → Apple-Werbung</em> → „Personalisierte Werbung" deaktivieren</li>
+          </ul>
+          <p class="mt-2">Alle weiteren CCPA/CPRA-Rechte können per E-Mail geltend gemacht werden: <a href="mailto:MichaelWehle@proton.me" class="text-blue-600 dark:text-blue-400 hover:underline">MichaelWehle@proton.me</a></p>
         </div>
       </div>
 
