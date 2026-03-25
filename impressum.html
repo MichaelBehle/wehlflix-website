@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="apple-touch-icon" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <!-- FIX: viewport-fit=cover für Notch/Dynamic Island iPhones -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Impressum – Wehlflix</title>
   <meta name="description" content="Impressum von Michael Wehle – Angaben gemäß § 5 DDG und § 18 MStV." />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://wehlflix.com/impressum.html" />
+  <meta property="og:title" content="Impressum – Wehlflix" />
+  <meta property="og:description" content="Impressum von Michael Wehle – Angaben gemäß § 5 DDG und § 18 MStV." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wehlflix.com/impressum.html" />
+  <meta property="og:locale" content="de_DE" />
   <!-- FIX: theme-color für Safari Statusleiste (Light + Dark) -->
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
@@ -37,8 +43,8 @@
       padding-left: env(safe-area-inset-left);
       padding-right: env(safe-area-inset-right);
     }
-    /* Mindest-Touch-Target 44x44pt nach Apple HIG */
-    a, button { min-height: 44px; }
+    /* Mindest-Touch-Target 44x44pt nach Apple HIG — nur Nav/Card-Links */
+    nav a, .space-y-3 > a, button { min-height: 44px; }
     /* Smooth Scroll für Anker-Links */
     html { scroll-behavior: smooth; }
   </style>
@@ -57,6 +63,7 @@
       <div class="flex gap-4 text-sm">
         <a href="impressum.html" class="font-semibold text-gray-900 dark:text-white">Impressum</a>
         <a href="datenschutz.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">Datenschutz</a>
+        <a href="privacy.html" class="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">EN</a>
       </div>
     </div>
   </nav>
@@ -131,7 +138,7 @@
   </main>
 
   <footer class="max-w-2xl mx-auto px-4 py-6 border-t border-gray-100 dark:border-gray-800 text-center text-xs text-gray-400 dark:text-gray-600">
-    © 2026 Michael Wehle · <a href="impressum.html" class="hover:underline">Impressum</a> · <a href="datenschutz.html" class="hover:underline">Datenschutz</a>
+    © 2026 Michael Wehle · <a href="impressum.html" class="hover:underline">Impressum</a> · <a href="datenschutz.html" class="hover:underline">Datenschutz</a> · <a href="privacy.html" class="hover:underline">Privacy (EN)</a>
   </footer>
 
 </body>
