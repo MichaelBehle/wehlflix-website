@@ -9,38 +9,24 @@
   <meta name="description" content="Privacy information for the SpoilerFree MMA app." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://wehlflix.com/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://wehlflix.com/privacy.html" />
+  <link rel="alternate" hreflang="de" href="https://wehlflix.com/datenschutz.html" />
+  <meta property="og:site_name" content="Wehlflix" />
   <meta property="og:title" content="SpoilerFree MMA Privacy Policy – Wehlflix" />
   <meta property="og:description" content="Privacy information for the SpoilerFree MMA app." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://wehlflix.com/privacy.html" />
+  <meta property="og:image" content="https://wehlflix.com/apple-touch-icon.png" />
   <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="SpoilerFree MMA Privacy Policy – Wehlflix" />
+  <meta name="twitter:description" content="Privacy information for the SpoilerFree MMA app." />
+  <meta name="twitter:image" content="https://wehlflix.com/apple-touch-icon.png" />
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <script>
-    tailwind = { config: {
-      darkMode: 'media',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-          }
-        }
-      }
-    }}
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      padding-top: env(safe-area-inset-top);
-      padding-bottom: env(safe-area-inset-bottom);
-      padding-left: env(safe-area-inset-left);
-      padding-right: env(safe-area-inset-right);
-    }
-    nav a, .space-y-3 > a, button { min-height: 44px; }
-    html { scroll-behavior: smooth; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans min-h-screen">
 
@@ -54,7 +40,7 @@
       </a>
       <div class="flex items-center gap-3 text-sm">
         <a href="support-en.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">Support</a>
-        <a href="impressum.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">Legal notice</a>
+        <a href="impressum.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">Legal notice (DE)</a>
         <a href="privacy.html" class="font-semibold text-gray-900 dark:text-white">Privacy</a>
         <a href="datenschutz.html" class="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">DE</a>
       </div>
@@ -118,9 +104,9 @@
             <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">When accessing this website, GitHub Pages automatically collects server log data including IP address, browser type, operating system, date/time of access, and pages visited. GitHub Inc. is certified under the EU-U.S. Data Privacy Framework (DPF). Legal basis: Art. 6(1)(f) GDPR. More information: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub Privacy Statement</a>.</p>
           </div>
           <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 text-gray-700 dark:text-gray-300 space-y-1">
-            <p class="font-medium text-gray-900 dark:text-white">Tailwind CSS CDN (Stylesheet)</p>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Vercel Inc. · 440 N Barranca Ave #4133, Covina, CA 91723, USA</p>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">This website loads the Tailwind CSS framework from the Vercel CDN (<code class="text-xs bg-gray-200 dark:bg-gray-700 px-1 rounded">cdn.tailwindcss.com</code>). Your IP address is transmitted to Vercel when the page loads. Vercel Inc. is certified under the EU-U.S. Data Privacy Framework (DPF). Legal basis: Art. 6(1)(f) GDPR. More information: <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Vercel Privacy Policy</a>.</p>
+            <p class="font-medium text-gray-900 dark:text-white">Locally Hosted Stylesheet</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Served directly from wehlflix.com via GitHub Pages</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">This website delivers its stylesheet as a local file from the same domain (<code class="text-xs bg-gray-200 dark:bg-gray-700 px-1 rounded">/styles.css</code>). No additional styling-related request to a third-party CDN is made when you open the page. Legal basis: Art. 6(1)(f) GDPR.</p>
           </div>
         </div>
       </div>
@@ -337,7 +323,7 @@
   </main>
 
   <footer class="max-w-2xl mx-auto px-4 py-6 border-t border-gray-100 dark:border-gray-800 text-center text-xs text-gray-400 dark:text-gray-600">
-    © 2026 Michael Wehle · <a href="support-en.html" class="hover:underline">Support</a> · <a href="support.html" class="hover:underline">Support (DE)</a> · <a href="impressum.html" class="hover:underline">Legal notice</a> · <a href="privacy.html" class="hover:underline">Privacy (EN)</a> · <a href="datenschutz.html" class="hover:underline">Datenschutz (DE)</a>
+    © 2026 Michael Wehle · <a href="support-en.html" class="hover:underline">Support</a> · <a href="support.html" class="hover:underline">Support (DE)</a> · <a href="impressum.html" class="hover:underline">Legal notice (DE)</a> · <a href="privacy.html" class="hover:underline">Privacy (EN)</a> · <a href="datenschutz.html" class="hover:underline">Datenschutz (DE)</a>
   </footer>
 
 </body>

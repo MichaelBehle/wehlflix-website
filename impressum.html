@@ -9,38 +9,22 @@
   <meta name="description" content="Impressum von Michael Wehle – Angaben gemäß § 5 DDG und § 18 MStV." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://wehlflix.com/impressum.html" />
+  <meta property="og:site_name" content="Wehlflix" />
   <meta property="og:title" content="Impressum – Wehlflix" />
   <meta property="og:description" content="Impressum von Michael Wehle – Angaben gemäß § 5 DDG und § 18 MStV." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://wehlflix.com/impressum.html" />
+  <meta property="og:image" content="https://wehlflix.com/apple-touch-icon.png" />
   <meta property="og:locale" content="de_DE" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Impressum – Wehlflix" />
+  <meta name="twitter:description" content="Impressum von Michael Wehle – Angaben gemäß § 5 DDG und § 18 MStV." />
+  <meta name="twitter:image" content="https://wehlflix.com/apple-touch-icon.png" />
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <script>
-    tailwind = { config: {
-      darkMode: 'media',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-          }
-        }
-      }
-    }}
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      padding-top: env(safe-area-inset-top);
-      padding-bottom: env(safe-area-inset-bottom);
-      padding-left: env(safe-area-inset-left);
-      padding-right: env(safe-area-inset-right);
-    }
-    nav a, .space-y-3 > a, button { min-height: 44px; }
-    html { scroll-behavior: smooth; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans min-h-screen">
   <nav class="sticky top-0 z-10 bg-white/90 dark:bg-gray-950/90 backdrop-blur border-b border-gray-200 dark:border-gray-800">
@@ -63,6 +47,10 @@
 
     <h1 class="text-2xl font-bold mb-1">Impressum</h1>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Angaben gemäß § 5 DDG und § 18 Abs. 2 MStV</p>
+    <div class="bg-blue-50 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900 rounded-xl p-5 text-sm text-blue-900 dark:text-blue-100 mb-8 leading-relaxed">
+      <p class="font-medium mb-1">English note</p>
+      <p>This legal notice is provided in German to comply with German legal requirements. For an English contact overview, please use <a href="support-en.html" class="underline">Support</a> and the <a href="privacy.html" class="underline">Privacy Policy</a>.</p>
+    </div>
 
     <section class="space-y-8">
       <div>
