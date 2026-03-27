@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <!-- FIX: viewport-fit=cover für Notch/Dynamic Island iPhones -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Impressum – Wehlflix</title>
   <meta name="description" content="Impressum von Michael Wehle – Angaben gemäß § 5 DDG und § 18 MStV." />
@@ -15,13 +14,10 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://wehlflix.com/impressum.html" />
   <meta property="og:locale" content="de_DE" />
-  <!-- FIX: theme-color für Safari Statusleiste (Light + Dark) -->
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
-  <!-- Apple Web App Meta Tags -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <!-- FIX: Tailwind config VOR dem CDN-Script -->
   <script>
     tailwind = { config: {
       darkMode: 'media',
@@ -35,7 +31,6 @@
     }}
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- FIX: safe-area-inset Padding für Home-Indicator & Notch -->
   <style>
     body {
       padding-top: env(safe-area-inset-top);
@@ -43,15 +38,11 @@
       padding-left: env(safe-area-inset-left);
       padding-right: env(safe-area-inset-right);
     }
-    /* Mindest-Touch-Target 44x44pt nach Apple HIG — nur Nav/Card-Links */
     nav a, .space-y-3 > a, button { min-height: 44px; }
-    /* Smooth Scroll für Anker-Links */
     html { scroll-behavior: smooth; }
   </style>
 </head>
 <body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans min-h-screen">
-
-  <!-- Navigation -->
   <nav class="sticky top-0 z-10 bg-white/90 dark:bg-gray-950/90 backdrop-blur border-b border-gray-200 dark:border-gray-800">
     <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
@@ -68,16 +59,12 @@
       </div>
     </div>
   </nav>
-
-  <!-- Content -->
   <main class="max-w-2xl mx-auto px-4 py-10">
 
     <h1 class="text-2xl font-bold mb-1">Impressum</h1>
     <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Angaben gemäß § 5 DDG und § 18 Abs. 2 MStV</p>
 
     <section class="space-y-8">
-
-      <!-- Anbieter -->
       <div>
         <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Anbieter</h2>
         <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 space-y-1 text-sm leading-relaxed">
@@ -87,8 +74,6 @@
           <p>Deutschland</p>
         </div>
       </div>
-
-      <!-- Kontakt -->
       <div>
         <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Kontakt</h2>
         <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 space-y-2 text-sm">
@@ -106,16 +91,12 @@
           </div>
         </div>
       </div>
-
-      <!-- Hinweis Steuer -->
       <div>
         <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Steuerliche Angaben</h2>
         <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 text-sm text-gray-600 dark:text-gray-400">
-          <p>Keine Umsatzsteuer-Identifikationsnummer vorhanden. Umsatzsteuerbefreiung gemäß § 19 UStG (Kleinunternehmerregelung).</p>
+          <p>Es ist keine Umsatzsteuer-Identifikationsnummer vorhanden. Es gilt die Umsatzsteuerbefreiung gemäß § 19 UStG (Kleinunternehmerregelung).</p>
         </div>
       </div>
-
-      <!-- Verantwortlich nach § 18 MStV -->
       <div>
         <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
         <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 space-y-1 text-sm">
@@ -123,8 +104,6 @@
           <p class="text-gray-600 dark:text-gray-400">Kuntzestraße 48, 73079 Süßen</p>
         </div>
       </div>
-
-      <!-- Haftungsausschluss -->
       <div>
         <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Haftungsausschluss</h2>
         <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 text-sm text-gray-600 dark:text-gray-400 space-y-3 leading-relaxed">

@@ -4,24 +4,20 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <!-- FIX: viewport-fit=cover für Notch/Dynamic Island iPhones -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Wehlflix – Apps by Michael Wehle</title>
+  <title>Wehlflix – Apps von Michael Wehle</title>
   <meta name="description" content="iOS-Apps von Michael Wehle mit Impressum, Datenschutzhinweisen und Kontakt." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://wehlflix.com/" />
-  <meta property="og:title" content="Wehlflix – Apps by Michael Wehle" />
+  <meta property="og:title" content="Wehlflix – Apps von Michael Wehle" />
   <meta property="og:description" content="iOS-Apps von Michael Wehle mit Impressum, Datenschutzhinweisen und Kontakt." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://wehlflix.com/" />
   <meta property="og:locale" content="de_DE" />
-  <!-- FIX: theme-color für Safari Statusleiste (Light + Dark) -->
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
-  <!-- Apple Web App Meta Tags -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <!-- FIX: Tailwind config VOR dem CDN-Script -->
   <script>
     tailwind = { config: {
       darkMode: 'media',
@@ -35,7 +31,6 @@
     }}
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- FIX: safe-area-inset Padding für Home-Indicator & Notch -->
   <style>
     body {
       padding-top: env(safe-area-inset-top);
@@ -43,32 +38,23 @@
       padding-left: env(safe-area-inset-left);
       padding-right: env(safe-area-inset-right);
     }
-    /* Mindest-Touch-Target 44x44pt nach Apple HIG — nur Nav/Card-Links */
     nav a, .space-y-3 > a, button { min-height: 44px; }
     html { scroll-behavior: smooth; }
   </style>
 </head>
 <body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans min-h-screen flex flex-col">
-
-  <!-- Header -->
   <header class="border-b border-gray-100 dark:border-gray-800">
     <div class="max-w-2xl mx-auto px-4 py-5 flex items-center justify-between">
       <div>
         <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-0.5">wehlflix.com</p>
-        <h1 class="text-xl font-bold">Apps by Michael Wehle</h1>
+        <h1 class="text-xl font-bold">Apps von Michael Wehle</h1>
       </div>
     </div>
   </header>
-
-  <!-- Main -->
   <main class="flex-1 max-w-2xl mx-auto px-4 py-10 w-full">
-
-    <!-- Hero -->
     <p class="text-gray-500 dark:text-gray-400 mb-10 leading-relaxed">
       Unabhängige iOS-Apps entwickelt von Michael Wehle. Alle rechtlichen Informationen findest du hier.
     </p>
-
-    <!-- Apps Section -->
     <section class="mb-10">
       <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-4">Apps</h2>
       <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 flex items-center gap-4">
@@ -83,8 +69,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Legal Links -->
     <section>
       <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-4">Rechtliches &amp; Support</h2>
       <div class="space-y-3">
