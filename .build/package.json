@@ -1,9 +1,9 @@
 {
-  "name": "wehlflix-website",
+  "name": "wehlflix-website-build",
   "version": "1.0.0",
-  "description": "Static website for Wehlflix and SpoilerFree MMA legal/support pages",
+  "description": "Local Tailwind build tooling for the Wehlflix static site",
   "scripts": {
-    "build:css": "tailwindcss -c tailwind.config.js -i ./tailwind-input.css -o ./styles.css --minify"
+    "build:css": "tailwindcss -c ./tailwind.config.js -i ./tailwind-input.css -o ../styles.css --minify"
   },
   "keywords": [
     "tailwind",
