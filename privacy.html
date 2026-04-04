@@ -32,7 +32,7 @@
 
   <nav class="sticky top-0 z-10 bg-white/90 dark:bg-gray-950/90 backdrop-blur border-b border-gray-200 dark:border-gray-800">
     <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+      <a href="index-en.html" class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
@@ -40,8 +40,8 @@
       </a>
       <div class="flex items-center gap-3 text-sm">
         <a href="support-en.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">Support</a>
-        <a href="impressum.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">Legal notice (DE)</a>
-        <a href="privacy.html" class="font-semibold text-gray-900 dark:text-white">Privacy</a>
+        <a href="impressum.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">Legal Notice (DE)</a>
+        <a href="privacy.html" class="font-semibold text-gray-900 dark:text-white">Privacy Policy</a>
         <a href="datenschutz.html" class="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">DE</a>
       </div>
     </div>
@@ -135,11 +135,11 @@
           </div>
           <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5">
             <p class="font-medium text-gray-800 dark:text-gray-200 mb-2">External Event Data Requests</p>
-            <p class="text-gray-600 dark:text-gray-400">When current event and fight card data is loaded, the app connects directly to BALLDONTLIE MMA. Technical connection data such as your IP address and device-related HTTP metadata may be processed by that provider. I do not directly control that processing. Legal basis: Art. 6(1)(b) and Art. 6(1)(f) GDPR.</p>
+            <p class="text-gray-600 dark:text-gray-400">When current event and fight card data is loaded, the app connects to the developer-operated No Spoiler MMA edge API, which securely proxies BALLDONTLIE MMA. Technical connection data such as your IP address and device-related HTTP metadata may be processed both by the No Spoiler MMA API endpoint and, for the proxied upstream request, by BALLDONTLIE MMA. Legal basis: Art. 6(1)(b) and Art. 6(1)(f) GDPR.</p>
           </div>
           <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5">
             <p class="font-medium text-gray-800 dark:text-gray-200 mb-2">Time Zone &amp; World Time Feature</p>
-            <p class="text-gray-600 dark:text-gray-400">The app reads the device's time zone automatically from iOS (<code class="text-xs bg-gray-200 dark:bg-gray-700 px-1 rounded">TimeZone.current</code>) to display world times (e.g. US time zones). This process takes place entirely on your device. No location data is requested and no personal data is collected or transmitted. Legal basis: Art. 6(1)(b) GDPR.</p>
+            <p class="text-gray-600 dark:text-gray-400">The app reads the device's current time zone automatically from iOS (<code class="text-xs bg-gray-200 dark:bg-gray-700 px-1 rounded">TimeZone.current</code>) to display event times in the appropriate local time zones. This process takes place entirely on your device. No location data is requested, and no personal data is collected or transmitted. Legal basis: Art. 6(1)(b) GDPR.</p>
           </div>
           <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5">
             <p class="font-medium text-gray-800 dark:text-gray-200 mb-2">Event Reminders</p>
@@ -194,7 +194,7 @@
             </div>
             <p class="font-semibold text-gray-900 dark:text-white">External Event Data Sources</p>
           </div>
-          <p class="text-gray-600 dark:text-gray-400">For current event and fight card data, the app currently uses <strong class="text-gray-800 dark:text-gray-200">BALLDONTLIE MMA</strong>. When your device requests this data, technical connection data may be processed directly by that provider. Legal basis: Art. 6(1)(b) and Art. 6(1)(f) GDPR.</p>
+          <p class="text-gray-600 dark:text-gray-400">For current event and fight card data, the app uses the developer-operated <strong class="text-gray-800 dark:text-gray-200">No Spoiler MMA edge API</strong>, which securely proxies <strong class="text-gray-800 dark:text-gray-200">BALLDONTLIE MMA</strong>. Technical connection data may therefore be processed by both the No Spoiler MMA API endpoint and the upstream data provider. Legal basis: Art. 6(1)(b) and Art. 6(1)(f) GDPR.</p>
         </div>
         <div class="bg-gray-50 dark:bg-gray-900 rounded-xl p-5 mb-4 space-y-3">
           <div class="flex items-center gap-3">
@@ -225,7 +225,7 @@
             </div>
             <div class="flex gap-2">
               <span class="font-semibold text-gray-700 dark:text-gray-300 shrink-0">Opt-out:</span>
-              <span class="text-gray-600 dark:text-gray-400">If available for your region, you can manage ad choices in the app under <em>More → Ads &amp; Privacy</em>. App permissions can be changed in the No Spoiler MMA iOS settings page.</span>
+              <span class="text-gray-600 dark:text-gray-400">If available for your region, you can manage ad choices in the app under <em>More → Ads &amp; Privacy</em>. App permissions can be changed in iOS Settings for No Spoiler MMA.</span>
             </div>
           </div>
 
@@ -314,7 +314,7 @@
   </main>
 
   <footer class="max-w-2xl mx-auto px-4 py-6 border-t border-gray-100 dark:border-gray-800 text-center text-xs text-gray-400 dark:text-gray-600">
-    © 2026 Michael Wehle · <a href="support-en.html" class="hover:underline">Support</a> · <a href="support.html" class="hover:underline">Support (DE)</a> · <a href="impressum.html" class="hover:underline">Legal notice (DE)</a> · <a href="privacy.html" class="hover:underline">Privacy (EN)</a> · <a href="datenschutz.html" class="hover:underline">Datenschutz (DE)</a>
+    © 2026 Michael Wehle · <a href="support-en.html" class="hover:underline">Support</a> · <a href="support.html" class="hover:underline">Support (DE)</a> · <a href="impressum.html" class="hover:underline">Legal Notice (DE)</a> · <a href="privacy.html" class="hover:underline">Privacy Policy (EN)</a> · <a href="datenschutz.html" class="hover:underline">Privacy Policy (DE)</a>
   </footer>
 
 </body>
